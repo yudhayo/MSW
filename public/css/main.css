@@ -11,8 +11,9 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 60px auto auto 60px;
 }
+
 .menu{
-    background: #2ecc71;
+    background: #26de81;
     grid-column-start: 1;
     grid-column-end: 5;
     padding-left: 20px;
@@ -33,6 +34,7 @@
     box-shadow: 4px 4px 0px #dedede;
     margin: auto;
 }
+
 .konten {
     grid-column: 2/5;
     justify-content: center;
@@ -42,7 +44,8 @@
     box-shadow: 0px 1px 0px rgba(0,0,0,0.1);
 }
 .footer{
-    background: #2ecc71;
+    background:black;
+    color: white;
     text-align: center;
     grid-column: 1/4;
     display: grid;
@@ -51,7 +54,24 @@
     justify-items: center;
 }
 
-.menu img{
+.footer-sub{
+    background: black;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    grid-column: 1/5;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.footer-sub{
+    position: fixed;
+    bottom: 0px;
+}
+
+.menu img, .menu-kal img{
     border-radius: 50%;
 }
 
@@ -82,16 +102,40 @@
 }
 
 /* buat kalkulator */
+.container-kal{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 60px auto auto 100px;
+}
+
+.menu-kal{
+    background: #2ecc71;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    padding-left: 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    align-items: center;
+    box-shadow: 0px 2px 0px #dedede
+}
+
+.body-kalkulator-1{
+    display: grid;
+    align-items: center;
+    background-color: rgb(216, 212, 212);
+}
+
 .body-kalkulator{
     display: grid;
-    height: 100vh;
-    justify-content: center;
     align-items: center;
+    justify-content: center; 
     background-color: rgb(216, 212, 212);
 }
 
 .kalkulator{
     border: 2px solid #2ecc71;
+    
     padding: 60px;
     background-color: white;
     border-radius: 20px;
@@ -141,13 +185,20 @@ input{
 
 
 /* buat peta */
+.container-maps{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 60px auto auto 0px;
+}
 
 .konten-peta{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 50%);
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 90vh;
 }
 
 .peta{
@@ -164,8 +215,8 @@ input{
 }
 
 .gambar-peta{
-    box-shadow: 4px 4px 0px #2ecc71;
-    max-height: 100%;
+    box-shadow: 0px 0px 0px #2ecc71;
+    max-height: 80%;
     max-width: 100%;
     margin: auto;
 }

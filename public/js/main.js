@@ -32,7 +32,7 @@ createContent = () => {
 
             const a_konten1 = document.createElement("a");
             a_konten1.className = "button-konten";
-            a_konten1.innerHTML = "Aplikasi Hitung - Hitungan";
+            a_konten1.innerHTML = "Aplikasi Hitung Angka";
             a_konten1.href = "project1"
             konten1.append(a_konten1);       
 
@@ -70,7 +70,7 @@ createContent = () => {
             footer.append(link2);
 
                 const img_link2 = document.createElement("img");
-                img_link2.src = "images/GitHub-black.png";
+                img_link2.src = "images/GitHub.png";
                 img_link2.alt = "GitHub";
                 img_link2.width = "30";
                 img_link2.height = "30";
