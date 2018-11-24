@@ -236,3 +236,15 @@ hr{
     left: 3px;
     text-shadow: 0 0 5px white;
 }
+
+#offline{
+    background-color: red;
+    color: white;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    opacity: 0.3;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    z-index: 401;
+}
